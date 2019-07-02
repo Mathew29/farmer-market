@@ -16,7 +16,7 @@ render(App);
 
 /*eslint-disable*/
 if(module.hot) {
-    module.hot.accpt('./components/App', () => {
+    module.hot.accept('./components/App', () => {
         render(App);
     });
 }

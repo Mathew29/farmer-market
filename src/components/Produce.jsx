@@ -9,17 +9,19 @@ function Produce(props) {
       `}</style>
       <div>
         <h2>{props.month}</h2>
-        <p><em>{props.selection}</em></p>
-        <br/>
+        <h4><em>{props.selection.map((produces, index) => 
+          <p key={index}>{produces}</p>)}</em></h4>
+
+        <br />
       </div>
-      <hr/>
+      <hr />
     </div>
   );
 }
 
 Produce.propTypes = {
   month: PropTypes.string.isRequired,
-  selection: PropTypes.string.isRequired,
+  selection: PropTypes.array.isRequired,
 };
 
 export default Produce;

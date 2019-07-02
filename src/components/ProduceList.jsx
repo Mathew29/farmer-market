@@ -1,10 +1,10 @@
 import React from 'react';
 import Produce from './Produce';
 
-var masterProduceList = [
-  {  
+const masterProduceList = [
+  {
     month: 'January',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -15,9 +15,9 @@ var masterProduceList = [
       'Turnips'
     ]
   },
-  {  
+  {
     month: 'February',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -27,9 +27,9 @@ var masterProduceList = [
       'Potatoes'
     ]
   },
-  {  
+  {
     month: 'March',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -40,9 +40,9 @@ var masterProduceList = [
       'Potatoes'
     ]
   },
-  {  
+  {
     month: 'April',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -55,9 +55,9 @@ var masterProduceList = [
       'Potatoes'
     ]
   },
-  {  
+  {
     month: 'May',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -70,9 +70,9 @@ var masterProduceList = [
       'Radishes'
     ]
   },
-  {  
+  {
     month: 'June',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -92,9 +92,9 @@ var masterProduceList = [
       'Squash'
     ]
   },
-  {  
+  {
     month: 'July',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -128,9 +128,9 @@ var masterProduceList = [
       'Turnips'
     ]
   },
-  {  
+  {
     month: 'August',
-    selection: [  
+    selection: [
       'Apples',
       'Apricots',
       'Blackberries',
@@ -168,9 +168,9 @@ var masterProduceList = [
       'Turnips'
     ]
   },
-  {  
+  {
     month: 'September',
-    selection: [  
+    selection: [
       'Apples',
       'Blueberries',
       'Grapes',
@@ -202,9 +202,9 @@ var masterProduceList = [
       'Turnips'
     ]
   },
-  {  
+  {
     month: 'October',
-    selection: [  
+    selection: [
       'Apples',
       'Grapes',
       'Hazelnuts',
@@ -235,9 +235,9 @@ var masterProduceList = [
       'Turnips'
     ]
   },
-  {  
+  {
     month: 'November',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -252,9 +252,9 @@ var masterProduceList = [
       'Turnips'
     ]
   },
-  {  
+  {
     month: 'December',
-    selection: [  
+    selection: [
       'Apples',
       'Hazelnuts',
       'Pears',
@@ -270,14 +270,14 @@ var masterProduceList = [
   }
 ];
 
-function ProduceList(){
+function ProduceList() {
   return (
     <div>
-      <hr/>
+      <hr />
       {masterProduceList.map((produce, index) =>
         <Produce month={produce.month}
           selection={produce.selection}
-          key={index}/>
+          key={index} />
       )}
     </div>
   );
