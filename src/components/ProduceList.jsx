@@ -283,7 +283,4 @@ function ProduceList(){
   );
 }
 
-
-
-
 export default ProduceList;

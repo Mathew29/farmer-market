@@ -1,5 +1,6 @@
 import React from 'react';
 import ScheduleList from './ScheduleList';
+import ProduceList from './ProduceList';
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
       <style global jsx>{`
 
       `}</style>
-      <ScheduleList />
+      <ScheduleList/>
+      <ProduceList/>
     </div>
   );
 }
