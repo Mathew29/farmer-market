@@ -1,6 +1,8 @@
 import React from 'react';
 import ScheduleList from './ScheduleList';
 import ProduceList from './ProduceList';
+import Header from './Header';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
 
@@ -9,8 +11,11 @@ function App() {
       <style global jsx>{`
 
       `}</style>
-      <ScheduleList/>
-      <ProduceList/>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={ScheduleList} />
+        <Route path='/producelist' component={ProduceList} />
+      </Switch>
     </div>
   );
 }
